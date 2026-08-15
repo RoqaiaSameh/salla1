@@ -1,0 +1,9 @@
+{% extends "layout.twig" %}
+
+{% block title %}{{ product.title }} - {{ shop.name }}{% endblock %}
+
+{% block content %}
+  <h2>{{ product.title }}</h2>
+  <p>السعر: {{ product.price }}</p>
+  <p>{{ product.description }}</p>
+{% endblock %}

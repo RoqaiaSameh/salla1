@@ -1,0 +1,25 @@
+{
+  "name": "my-salla-theme",
+  "version": "1.0.0",
+  "description": "Simple Salla theme scaffold",
+  "scripts": {
+    "build": "node render.js",
+    "start": "npm run build ; npx http-server dist -p 8080",
+    "watch": "npx chokidar \"templates/**\" \"assets/**\" -c \"npm run build\""
+  },
+  "devDependencies": {
+    "twig": "^1.15.2",
+    "http-server": "^14.1.1",
+    "chokidar-cli": "^3.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "form-data": "^4.0.0"
+  },
+  "scripts": {
+    "build": "node render.js",
+    "start": "npm run build ; npx http-server dist -p 8080",
+    "watch": "npx chokidar \"templates/**\" \"assets/**\" -c \"npm run build\"",
+    "upload": "node upload-theme.js"
+  }
+}
